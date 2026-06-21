@@ -254,7 +254,9 @@ const saveReturnedUser = async (returnedUser: any) => {
     }
 
     try {
-      setLoadingRoom(true);
+      if (!room) {
+  setLoadingRoom(true);
+}
       setMessage('');
 
       const baseUrl = getBaseUrl();
@@ -1288,9 +1290,9 @@ const saveReturnedUser = async (returnedUser: any) => {
             </View>
           ) : null}
 
-          {loadingRoom ? (
-            <Text style={styles.loadingText}>토론방 정보를 불러오는 중...</Text>
-          ) : null}
+          {loadingRoom && !room ? (
+  <Text style={styles.loadingText}>토론방 정보를 불러오는 중...</Text>
+) : null}
 
           <Text style={styles.sectionTitle}>토론 메시지</Text>
 
