@@ -262,12 +262,7 @@ export default function SettingsScreen() {
   sub="문의하기, 버그 신고, 자주 묻는 질문"
   onPress={() => goTo('/support')}
 />
-<SettingItem
-  icon="🚀"
-  title="출시 체크리스트"
-  sub="앱스토어 출시 전 해야 할 일을 확인합니다."
-  onPress={() => router.push('/launch-checklist' as any)}
-/>
+
         <SettingItem
           icon="□"
           title="문의 내역"

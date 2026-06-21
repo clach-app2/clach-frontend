@@ -216,7 +216,7 @@ export default function HomeScreen() {
           <MenuItem title="프리미엄" sub="AI 요약 사용량과 프리미엄 기능 확인" path="/premium" />
           <MenuItem title="고객센터" sub="문의하기, 버그 신고, 자주 묻는 질문" path="/support" />
           <MenuItem title="설정" sub="비밀번호 변경, 로그아웃, 계정 관리" path="/settings" />
-          <MenuItem title="출시 체크리스트" sub="앱스토어 출시 전 준비사항 확인" path="/launch-checklist" />
+          
         </View>
 
         <Pressable style={styles.logoutButton} onPress={logout}>
